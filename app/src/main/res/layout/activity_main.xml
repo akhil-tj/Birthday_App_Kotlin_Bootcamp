@@ -4,12 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:layout_weight="1"
+        android:src="@drawable/background" />
+
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher_foreground"
-        android:scaleType="center" />
+        android:layout_weight="0"
+        android:textSize="32dp"
+        android:background="@color/teal_200"
+        android:text="Good Morning, Banglore! " />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
